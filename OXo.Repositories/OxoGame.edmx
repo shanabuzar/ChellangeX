@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ChallengeXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="QuestionAnswers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QuestionNo" Type="int" />
+          <Property Name="Question" Type="nvarchar(max)" />
+          <Property Name="OptionA" Type="nvarchar(max)" />
+          <Property Name="OptionB" Type="nvarchar(max)" />
+          <Property Name="OptionC" Type="nvarchar(max)" />
+          <Property Name="Answer" Type="nvarchar(max)" />
+          <Property Name="Level" Type="nchar" MaxLength="20" />
+          <Property Name="Theme" Type="nvarchar" MaxLength="50" />
+          <Property Name="Bonus" Type="int" />
+          <Property Name="ResponseTime" Type="int" />
+        </EntityType>
+        <EntityContainer Name="ChallengeXModelStoreContainer">
+          <EntitySet Name="QuestionAnswers" EntityType="Self.QuestionAnswers" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ChallengeXModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ChallengeXEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="QuestionAnswers" EntityType="ChallengeXModel.QuestionAnswer" />
+        </EntityContainer>
+        <EntityType Name="QuestionAnswer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QuestionNo" Type="Int32" />
+          <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OptionA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OptionB" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OptionC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Level" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Theme" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Bonus" Type="Int32" />
+          <Property Name="ResponseTime" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ChallengeXModelStoreContainer" CdmEntityContainer="ChallengeXEntities">
+          <EntitySetMapping Name="QuestionAnswers">
+            <EntityTypeMapping TypeName="ChallengeXModel.QuestionAnswer">
+              <MappingFragment StoreEntitySet="QuestionAnswers">
+                <ScalarProperty Name="ResponseTime" ColumnName="ResponseTime" />
+                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+                <ScalarProperty Name="Theme" ColumnName="Theme" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="OptionC" ColumnName="OptionC" />
+                <ScalarProperty Name="OptionB" ColumnName="OptionB" />
+                <ScalarProperty Name="OptionA" ColumnName="OptionA" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="QuestionNo" ColumnName="QuestionNo" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

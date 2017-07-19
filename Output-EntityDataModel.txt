@@ -1,0 +1,36 @@
+﻿Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.6409116.
+Generating the model took 00:00:01.5976352.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.4827750.
+Generating the model took 00:00:01.1637962.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.5096854.
+Generating the model took 00:00:01.1952407.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.4995623.
+Generating the model took 00:00:00.9831464.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.4886233.
+Generating the model took 00:00:01.0254497.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.4313963.
+Generating the model took 00:00:00.7634530.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.7002330.
+Generating the model took 00:00:01.0783434.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.5142635.
+Generating the model took 00:00:01.0794601.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.4771146.
+Generating the model took 00:00:00.3520504.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.5191720.
+Generating the model took 00:00:01.0436583.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.5170700.
+Generating the model took 00:00:01.0454564.
+Generated model file: OxoGame.edmx.
+Loading metadata from the database took 00:00:00.4887634.
+Generating the model took 00:00:01.0149720.
