@@ -33,7 +33,7 @@ namespace Oxo.Services.Services
         }
 
         /// <summary>
-        /// Read data from Csv format
+        /// Read data from Cxls format
         /// </summary>
         /// <param name="dataValue">It cntains the values.</param>
         /// <returns>Product object</returns>
